@@ -1,0 +1,870 @@
+EESchema Schematic File Version 4
+EELAYER 30 0
+EELAYER END
+$Descr A4 11693 8268
+encoding utf-8
+Sheet 1 1
+Title ""
+Date ""
+Rev ""
+Comp ""
+Comment1 ""
+Comment2 ""
+Comment3 ""
+Comment4 ""
+$EndDescr
+$Comp
+L Device:Rotary_Encoder_Switch ROT1
+U 1 1 615F43D8
+P 2350 6750
+F 0 "ROT1" H 2350 7117 50  0000 C CNN
+F 1 "Rotary_Encoder_Switch" H 2350 7026 50  0000 C CNN
+F 2 "Rotary_Encoder:RotaryEncoder_Alps_EC11E-Switch_Vertical_H20mm" H 2350 7025 50  0001 C CNN
+F 3 "~" H 2350 7010 50  0001 C CNN
+	1    2350 6750
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 6100 0    50   Input ~ 0
+GPIO1
+Wire Wire Line
+	5050 6100 5250 6100
+Wire Wire Line
+	4500 6100 4650 6100
+Text GLabel 4500 6500 0    50   Input ~ 0
+GPIO2
+Wire Wire Line
+	5050 6500 5250 6500
+Wire Wire Line
+	4500 6500 4650 6500
+$Comp
+L Switch:SW_Push SW3
+U 1 1 615FEB11
+P 4850 6900
+F 0 "SW3" H 4850 7093 50  0000 C CNN
+F 1 "SW_Push" H 4850 7094 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 4850 7100 50  0001 C CNN
+F 3 "~" H 4850 7100 50  0001 C CNN
+	1    4850 6900
+	1    0    0    -1  
+$EndComp
+Text GLabel 4500 6900 0    50   Input ~ 0
+GPIO3
+Wire Wire Line
+	5050 6900 5250 6900
+Wire Wire Line
+	4500 6900 4650 6900
+Text GLabel 4500 7300 0    50   Input ~ 0
+GPIO4
+Wire Wire Line
+	5050 7300 5250 7300
+Wire Wire Line
+	4500 7300 4650 7300
+Text GLabel 5850 6100 0    50   Input ~ 0
+GPIO5
+Wire Wire Line
+	6400 6100 6600 6100
+Wire Wire Line
+	5850 6100 6000 6100
+Text GLabel 5850 6500 0    50   Input ~ 0
+GPIO6
+Wire Wire Line
+	6400 6500 6600 6500
+Wire Wire Line
+	5850 6500 6000 6500
+Text GLabel 5850 6900 0    50   Input ~ 0
+GPIO7
+Wire Wire Line
+	6400 6900 6600 6900
+Wire Wire Line
+	5850 6900 6000 6900
+Text GLabel 5850 7300 0    50   Input ~ 0
+GPIO8
+Wire Wire Line
+	6400 7300 6600 7300
+Wire Wire Line
+	5850 7300 6000 7300
+$Comp
+L power:GND #PWR0101
+U 1 1 6162B30D
+P 1750 7250
+F 0 "#PWR0101" H 1750 7000 50  0001 C CNN
+F 1 "GND" H 1755 7077 50  0000 C CNN
+F 2 "" H 1750 7250 50  0001 C CNN
+F 3 "" H 1750 7250 50  0001 C CNN
+	1    1750 7250
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1750 7250 1750 7150
+Wire Wire Line
+	1750 6750 2050 6750
+Wire Wire Line
+	2650 6850 2650 7150
+Wire Wire Line
+	2650 7150 1750 7150
+Connection ~ 1750 7150
+Wire Wire Line
+	1750 7150 1750 6750
+Wire Wire Line
+	2650 6650 3050 6650
+Wire Wire Line
+	3050 6350 3050 6150
+Wire Wire Line
+	3050 6150 3100 6150
+Wire Wire Line
+	1450 6300 1450 6150
+Wire Wire Line
+	1450 6150 1700 6150
+Connection ~ 3050 6150
+Wire Wire Line
+	1700 6250 1700 6150
+Connection ~ 1700 6150
+Wire Wire Line
+	1700 6150 3050 6150
+Text Label 2050 6850 2    50   ~ 0
+CLK
+Text Label 2050 6750 2    50   ~ 0
+GND
+Text Label 2050 6650 2    50   ~ 0
+DATA
+Text Label 2800 6650 2    50   ~ 0
+SW
+Wire Wire Line
+	1700 6550 1700 6650
+Wire Wire Line
+	1700 6650 2050 6650
+Wire Wire Line
+	2050 6850 1450 6850
+Wire Wire Line
+	1450 6850 1450 6600
+Text GLabel 1200 6650 0    50   Output ~ 0
+GPIO17
+Text GLabel 1200 6850 0    50   Output ~ 0
+GPIO18
+Text GLabel 3450 6650 2    50   Input ~ 0
+GPIO9
+Wire Wire Line
+	1700 6650 1200 6650
+Connection ~ 1700 6650
+Wire Wire Line
+	1450 6850 1200 6850
+Connection ~ 1450 6850
+Wire Wire Line
+	3050 6650 3450 6650
+Connection ~ 3050 6650
+Text GLabel 850  1100 0    50   Input ~ 0
+GPIO1
+Text GLabel 850  1300 0    50   Input ~ 0
+GPIO2
+Text GLabel 850  1500 0    50   Input ~ 0
+GPIO4
+Text GLabel 850  1400 0    50   Input ~ 0
+GPIO3
+Text GLabel 850  1600 0    50   Input ~ 0
+GPIO5
+Text GLabel 850  1800 0    50   Input ~ 0
+GPIO6
+Text GLabel 850  1900 0    50   Input ~ 0
+GPIO7
+Text GLabel 850  2000 0    50   Input ~ 0
+GPIO8
+Wire Wire Line
+	1450 1100 850  1100
+Wire Wire Line
+	1450 1300 850  1300
+Wire Wire Line
+	1450 1400 850  1400
+Wire Wire Line
+	1450 1500 850  1500
+Wire Wire Line
+	1450 1600 850  1600
+Wire Wire Line
+	1450 1800 850  1800
+Wire Wire Line
+	1450 1900 850  1900
+Wire Wire Line
+	1450 2000 850  2000
+Text Label 950  1100 0    50   ~ 0
+SW1
+Text Label 950  1300 0    50   ~ 0
+SW2
+Text Label 950  1400 0    50   ~ 0
+SW3
+Text Label 950  1500 0    50   ~ 0
+SW4
+Text Label 950  1600 0    50   ~ 0
+SW5
+Text Label 950  1800 0    50   ~ 0
+SW6
+Text Label 950  1900 0    50   ~ 0
+SW7
+Text Label 950  2000 0    50   ~ 0
+SW8
+Text Label 950  2100 0    50   ~ 0
+ROT_SW
+Wire Wire Line
+	1450 2100 850  2100
+Text GLabel 850  2100 0    50   Input ~ 0
+GPIO9
+Text GLabel 850  2400 0    50   Input ~ 0
+GPIO18
+Text GLabel 850  2300 0    50   Input ~ 0
+GPIO17
+Wire Notes Line
+	3900 7550 3900 5750
+Text Notes 2450 7600 2    50   ~ 0
+Rotary encoder
+Text Notes 5700 7600 2    50   ~ 0
+Switches
+$Comp
+L power:+5V #PWR0104
+U 1 1 6173F12D
+P 3100 6150
+F 0 "#PWR0104" H 3100 6000 50  0001 C CNN
+F 1 "+5V" H 3115 6323 50  0000 C CNN
+F 2 "" H 3100 6150 50  0001 C CNN
+F 3 "" H 3100 6150 50  0001 C CNN
+	1    3100 6150
+	1    0    0    -1  
+$EndComp
+Wire Notes Line
+	4300 2550 4300 750 
+$Comp
+L power:GND #PWR0105
+U 1 1 617DAAC1
+P 8400 1550
+F 0 "#PWR0105" H 8400 1300 50  0001 C CNN
+F 1 "GND" H 8405 1377 50  0000 C CNN
+F 2 "" H 8400 1550 50  0001 C CNN
+F 3 "" H 8400 1550 50  0001 C CNN
+	1    8400 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0106
+U 1 1 617DADE9
+P 8400 750
+F 0 "#PWR0106" H 8400 600 50  0001 C CNN
+F 1 "+5V" H 8415 923 50  0000 C CNN
+F 2 "" H 8400 750 50  0001 C CNN
+F 3 "" H 8400 750 50  0001 C CNN
+	1    8400 750 
+	1    0    0    -1  
+$EndComp
+Text GLabel 7750 1150 0    50   Input ~ 0
+NEOPIX_5v
+Wire Wire Line
+	7750 1150 8000 1150
+$Comp
+L Device:R R4
+U 1 1 6173190B
+P 5300 2750
+F 0 "R4" H 5370 2796 50  0000 L CNN
+F 1 "10k" H 5370 2705 50  0000 L CNN
+F 2 "Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm" V 5230 2750 50  0001 C CNN
+F 3 "~" H 5300 2750 50  0001 C CNN
+	1    5300 2750
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R2
+U 1 1 6162DA9A
+P 1450 6450
+F 0 "R2" H 1520 6496 50  0000 L CNN
+F 1 "10k" H 1520 6405 50  0000 L CNN
+F 2 "Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm" V 1380 6450 50  0001 C CNN
+F 3 "~" H 1450 6450 50  0001 C CNN
+	1    1450 6450
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R3
+U 1 1 6162E01A
+P 1700 6400
+F 0 "R3" H 1770 6446 50  0000 L CNN
+F 1 "10k" H 1770 6355 50  0000 L CNN
+F 2 "Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm" V 1630 6400 50  0001 C CNN
+F 3 "~" H 1700 6400 50  0001 C CNN
+	1    1700 6400
+	1    0    0    -1  
+$EndComp
+$Comp
+L Device:R R1
+U 1 1 6162CB4D
+P 3050 6500
+F 0 "R1" H 3120 6546 50  0000 L CNN
+F 1 "10k" H 3120 6455 50  0000 L CNN
+F 2 "Resistor_THT:R_Box_L8.4mm_W2.5mm_P5.08mm" V 2980 6500 50  0001 C CNN
+F 3 "~" H 3050 6500 50  0001 C CNN
+	1    3050 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0121
+U 1 1 61894442
+P 5250 6100
+F 0 "#PWR0121" H 5250 5850 50  0001 C CNN
+F 1 "GND" V 5255 5972 50  0000 R CNN
+F 2 "" H 5250 6100 50  0001 C CNN
+F 3 "" H 5250 6100 50  0001 C CNN
+	1    5250 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0122
+U 1 1 6189B703
+P 5250 6500
+F 0 "#PWR0122" H 5250 6250 50  0001 C CNN
+F 1 "GND" V 5255 6372 50  0000 R CNN
+F 2 "" H 5250 6500 50  0001 C CNN
+F 3 "" H 5250 6500 50  0001 C CNN
+	1    5250 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0123
+U 1 1 6189D285
+P 5250 6900
+F 0 "#PWR0123" H 5250 6650 50  0001 C CNN
+F 1 "GND" V 5255 6772 50  0000 R CNN
+F 2 "" H 5250 6900 50  0001 C CNN
+F 3 "" H 5250 6900 50  0001 C CNN
+	1    5250 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0124
+U 1 1 6189EE48
+P 5250 7300
+F 0 "#PWR0124" H 5250 7050 50  0001 C CNN
+F 1 "GND" V 5255 7172 50  0000 R CNN
+F 2 "" H 5250 7300 50  0001 C CNN
+F 3 "" H 5250 7300 50  0001 C CNN
+	1    5250 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0125
+U 1 1 618A4620
+P 6600 6100
+F 0 "#PWR0125" H 6600 5850 50  0001 C CNN
+F 1 "GND" V 6605 5972 50  0000 R CNN
+F 2 "" H 6600 6100 50  0001 C CNN
+F 3 "" H 6600 6100 50  0001 C CNN
+	1    6600 6100
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0126
+U 1 1 618A4626
+P 6600 6500
+F 0 "#PWR0126" H 6600 6250 50  0001 C CNN
+F 1 "GND" V 6605 6372 50  0000 R CNN
+F 2 "" H 6600 6500 50  0001 C CNN
+F 3 "" H 6600 6500 50  0001 C CNN
+	1    6600 6500
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0127
+U 1 1 618A462C
+P 6600 6900
+F 0 "#PWR0127" H 6600 6650 50  0001 C CNN
+F 1 "GND" V 6605 6772 50  0000 R CNN
+F 2 "" H 6600 6900 50  0001 C CNN
+F 3 "" H 6600 6900 50  0001 C CNN
+	1    6600 6900
+	0    -1   -1   0   
+$EndComp
+$Comp
+L power:GND #PWR0128
+U 1 1 618A4632
+P 6600 7300
+F 0 "#PWR0128" H 6600 7050 50  0001 C CNN
+F 1 "GND" V 6605 7172 50  0000 R CNN
+F 2 "" H 6600 7300 50  0001 C CNN
+F 3 "" H 6600 7300 50  0001 C CNN
+	1    6600 7300
+	0    -1   -1   0   
+$EndComp
+$Comp
+L dk_Addressable-Specialty:COM-12999 D1
+U 1 1 618A9113
+P 8500 1150
+F 0 "D1" H 8944 1150 50  0000 L CNN
+F 1 "COM-12999" H 8844 1105 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 8550 850 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 8600 775 50  0001 L TNN
+	1    8500 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0107
+U 1 1 618DD0F9
+P 9500 1550
+F 0 "#PWR0107" H 9500 1300 50  0001 C CNN
+F 1 "GND" H 9505 1377 50  0000 C CNN
+F 2 "" H 9500 1550 50  0001 C CNN
+F 3 "" H 9500 1550 50  0001 C CNN
+	1    9500 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0108
+U 1 1 618E0306
+P 10600 1550
+F 0 "#PWR0108" H 10600 1300 50  0001 C CNN
+F 1 "GND" H 10605 1377 50  0000 C CNN
+F 2 "" H 10600 1550 50  0001 C CNN
+F 3 "" H 10600 1550 50  0001 C CNN
+	1    10600 1550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0109
+U 1 1 618E924C
+P 8400 2950
+F 0 "#PWR0109" H 8400 2700 50  0001 C CNN
+F 1 "GND" H 8405 2777 50  0000 C CNN
+F 2 "" H 8400 2950 50  0001 C CNN
+F 3 "" H 8400 2950 50  0001 C CNN
+	1    8400 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0110
+U 1 1 618E935A
+P 8400 2150
+F 0 "#PWR0110" H 8400 2000 50  0001 C CNN
+F 1 "+5V" H 8415 2323 50  0000 C CNN
+F 2 "" H 8400 2150 50  0001 C CNN
+F 3 "" H 8400 2150 50  0001 C CNN
+	1    8400 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0111
+U 1 1 618E936E
+P 9500 2950
+F 0 "#PWR0111" H 9500 2700 50  0001 C CNN
+F 1 "GND" H 9505 2777 50  0000 C CNN
+F 2 "" H 9500 2950 50  0001 C CNN
+F 3 "" H 9500 2950 50  0001 C CNN
+	1    9500 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0112
+U 1 1 618E9378
+P 9500 2150
+F 0 "#PWR0112" H 9500 2000 50  0001 C CNN
+F 1 "+5V" H 9515 2323 50  0000 C CNN
+F 2 "" H 9500 2150 50  0001 C CNN
+F 3 "" H 9500 2150 50  0001 C CNN
+	1    9500 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Addressable-Specialty:COM-12999 D5
+U 1 1 618E9382
+P 9600 2550
+F 0 "D5" H 10044 2550 50  0000 L CNN
+F 1 "COM-12999" H 9944 2505 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 9650 2250 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 9700 2175 50  0001 L TNN
+	1    9600 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0113
+U 1 1 618E938C
+P 10600 2950
+F 0 "#PWR0113" H 10600 2700 50  0001 C CNN
+F 1 "GND" H 10605 2777 50  0000 C CNN
+F 2 "" H 10600 2950 50  0001 C CNN
+F 3 "" H 10600 2950 50  0001 C CNN
+	1    10600 2950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0114
+U 1 1 618E9396
+P 10600 2150
+F 0 "#PWR0114" H 10600 2000 50  0001 C CNN
+F 1 "+5V" H 10615 2323 50  0000 C CNN
+F 2 "" H 10600 2150 50  0001 C CNN
+F 3 "" H 10600 2150 50  0001 C CNN
+	1    10600 2150
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Addressable-Specialty:COM-12999 D6
+U 1 1 618E93A0
+P 10700 2550
+F 0 "D6" H 11144 2550 50  0000 L CNN
+F 1 "COM-12999" H 11044 2505 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 10750 2250 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 10800 2175 50  0001 L TNN
+	1    10700 2550
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 2550 9100 2550
+Wire Wire Line
+	10000 2550 10200 2550
+$Comp
+L power:GND #PWR0115
+U 1 1 618EEA8C
+P 8400 4350
+F 0 "#PWR0115" H 8400 4100 50  0001 C CNN
+F 1 "GND" H 8405 4177 50  0000 C CNN
+F 2 "" H 8400 4350 50  0001 C CNN
+F 3 "" H 8400 4350 50  0001 C CNN
+	1    8400 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0116
+U 1 1 618EEC2A
+P 8400 3550
+F 0 "#PWR0116" H 8400 3400 50  0001 C CNN
+F 1 "+5V" H 8415 3723 50  0000 C CNN
+F 2 "" H 8400 3550 50  0001 C CNN
+F 3 "" H 8400 3550 50  0001 C CNN
+	1    8400 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Addressable-Specialty:COM-12999 D7
+U 1 1 618EEC34
+P 8500 3950
+F 0 "D7" H 8944 3950 50  0000 L CNN
+F 1 "COM-12999" H 8844 3905 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 8550 3650 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 8600 3575 50  0001 L TNN
+	1    8500 3950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0117
+U 1 1 618EEC3E
+P 9500 4350
+F 0 "#PWR0117" H 9500 4100 50  0001 C CNN
+F 1 "GND" H 9505 4177 50  0000 C CNN
+F 2 "" H 9500 4350 50  0001 C CNN
+F 3 "" H 9500 4350 50  0001 C CNN
+	1    9500 4350
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0118
+U 1 1 618EEC48
+P 9500 3550
+F 0 "#PWR0118" H 9500 3400 50  0001 C CNN
+F 1 "+5V" H 9515 3723 50  0000 C CNN
+F 2 "" H 9500 3550 50  0001 C CNN
+F 3 "" H 9500 3550 50  0001 C CNN
+	1    9500 3550
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Addressable-Specialty:COM-12999 D8
+U 1 1 618EEC52
+P 9600 3950
+F 0 "D8" H 10044 3950 50  0000 L CNN
+F 1 "COM-12999" H 9944 3905 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 9650 3650 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 9700 3575 50  0001 L TNN
+	1    9600 3950
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	8900 3950 9100 3950
+Wire Wire Line
+	8000 1850 8000 2550
+Wire Wire Line
+	11100 2550 11100 3250
+Wire Wire Line
+	11100 3250 8000 3250
+Wire Wire Line
+	8000 3250 8000 3950
+Wire Wire Line
+	11100 1850 8000 1850
+Wire Wire Line
+	11100 1150 11100 1850
+Wire Wire Line
+	10000 1150 10200 1150
+Wire Wire Line
+	8900 1150 9100 1150
+$Comp
+L dk_Addressable-Specialty:COM-12999 D3
+U 1 1 618E03EE
+P 10700 1150
+F 0 "D3" H 11144 1150 50  0000 L CNN
+F 1 "COM-12999" H 11044 1105 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 10750 850 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 10800 775 50  0001 L TNN
+	1    10700 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0119
+U 1 1 618E03E4
+P 10600 750
+F 0 "#PWR0119" H 10600 600 50  0001 C CNN
+F 1 "+5V" H 10615 923 50  0000 C CNN
+F 2 "" H 10600 750 50  0001 C CNN
+F 3 "" H 10600 750 50  0001 C CNN
+	1    10600 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Addressable-Specialty:COM-12999 D2
+U 1 1 618DD1B1
+P 9600 1150
+F 0 "D2" H 10044 1150 50  0000 L CNN
+F 1 "COM-12999" H 9944 1105 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 9650 850 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 9700 775 50  0001 L TNN
+	1    9600 1150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0120
+U 1 1 618DD1A7
+P 9500 750
+F 0 "#PWR0120" H 9500 600 50  0001 C CNN
+F 1 "+5V" H 9515 923 50  0000 C CNN
+F 2 "" H 9500 750 50  0001 C CNN
+F 3 "" H 9500 750 50  0001 C CNN
+	1    9500 750 
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Addressable-Specialty:COM-12999 D4
+U 1 1 618E9364
+P 8500 2550
+F 0 "D4" H 8944 2550 50  0000 L CNN
+F 1 "COM-12999" H 8844 2505 50  0001 L TNN
+F 2 "LED_THT:LED_D5.0mm-4_RGB" H 8550 2250 50  0001 L TNN
+F 3 "https://cdn.sparkfun.com/datasheets/Components/LED/COM-12877.pdf" H 8600 2175 50  0001 L TNN
+	1    8500 2550
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0102
+U 1 1 61944324
+P 5900 3150
+F 0 "#PWR0102" H 5900 2900 50  0001 C CNN
+F 1 "GND" H 5905 2977 50  0000 C CNN
+F 2 "" H 5900 3150 50  0001 C CNN
+F 3 "" H 5900 3150 50  0001 C CNN
+	1    5900 3150
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:+5V #PWR0103
+U 1 1 61944947
+P 5900 900
+F 0 "#PWR0103" H 5900 750 50  0001 C CNN
+F 1 "+5V" H 5915 1073 50  0000 C CNN
+F 2 "" H 5900 900 50  0001 C CNN
+F 3 "" H 5900 900 50  0001 C CNN
+	1    5900 900 
+	1    0    0    -1  
+$EndComp
+Text GLabel 6200 2600 2    50   Output ~ 0
+NEOPIX_5v
+Wire Wire Line
+	5300 2600 5500 2600
+Wire Wire Line
+	5900 3000 5900 3150
+Wire Wire Line
+	5900 3150 5300 3150
+Connection ~ 5900 3150
+$Comp
+L Switch:SW_Push SW7
+U 1 1 616114FE
+P 6200 6900
+F 0 "SW7" H 6200 7093 50  0000 C CNN
+F 1 "SW_Push" H 6200 7094 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 6200 7100 50  0001 C CNN
+F 3 "~" H 6200 7100 50  0001 C CNN
+	1    6200 6900
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW8
+U 1 1 616114F4
+P 6200 7300
+F 0 "SW8" H 6200 7493 50  0000 C CNN
+F 1 "SW_Push" H 6200 7494 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 6200 7500 50  0001 C CNN
+F 3 "~" H 6200 7500 50  0001 C CNN
+	1    6200 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW6
+U 1 1 61605E9B
+P 6200 6500
+F 0 "SW6" H 6200 6693 50  0000 C CNN
+F 1 "SW_Push" H 6200 6694 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 6200 6700 50  0001 C CNN
+F 3 "~" H 6200 6700 50  0001 C CNN
+	1    6200 6500
+	1    0    0    -1  
+$EndComp
+Text GLabel 5200 2600 0    50   Input ~ 0
+GPIO28
+Wire Wire Line
+	5200 2600 5300 2600
+Text Label 4900 2550 0    50   ~ 0
+NEOPIX
+$Comp
+L power:GND #PWR0129
+U 1 1 619569BC
+P 5300 1200
+F 0 "#PWR0129" H 5300 950 50  0001 C CNN
+F 1 "GND" V 5305 1072 50  0000 R CNN
+F 2 "" H 5300 1200 50  0001 C CNN
+F 3 "" H 5300 1200 50  0001 C CNN
+	1    5300 1200
+	0    1    1    0   
+$EndComp
+Wire Wire Line
+	5300 1200 5500 1200
+$Comp
+L Switch:SW_Push SW5
+U 1 1 61605E91
+P 6200 6100
+F 0 "SW5" H 6200 6293 50  0000 C CNN
+F 1 "SW_Push" H 6200 6294 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 6200 6300 50  0001 C CNN
+F 3 "~" H 6200 6300 50  0001 C CNN
+	1    6200 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW4
+U 1 1 61605E87
+P 4850 7300
+F 0 "SW4" H 4850 7493 50  0000 C CNN
+F 1 "SW_Push" H 4850 7494 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 4850 7500 50  0001 C CNN
+F 3 "~" H 4850 7500 50  0001 C CNN
+	1    4850 7300
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW1
+U 1 1 615F5319
+P 4850 6100
+F 0 "SW1" H 4850 6293 50  0000 C CNN
+F 1 "SW_Push" H 4850 6294 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 4850 6300 50  0001 C CNN
+F 3 "~" H 4850 6300 50  0001 C CNN
+	1    4850 6100
+	1    0    0    -1  
+$EndComp
+$Comp
+L Switch:SW_Push SW2
+U 1 1 615FE2E7
+P 4850 6500
+F 0 "SW2" H 4850 6693 50  0000 C CNN
+F 1 "SW_Push" H 4850 6694 50  0001 C CNN
+F 2 "macropad:SW_Cherry_MX_1.00u_PCB__Rotated" H 4850 6700 50  0001 C CNN
+F 3 "~" H 4850 6700 50  0001 C CNN
+	1    4850 6500
+	1    0    0    -1  
+$EndComp
+$Comp
+L dk_Logic-Buffers-Drivers-Receivers-Transceivers:SN74AHCT125N U2
+U 1 1 61931135
+P 5900 1600
+F 0 "U2" H 5850 2503 60  0000 C CNN
+F 1 "SN74AHCT125N" H 5850 2397 60  0000 C CNN
+F 2 "digikey-footprints:DIP-14_W3mm" H 6100 1800 60  0001 L CNN
+F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74ahct125" H 6100 1900 60  0001 L CNN
+F 4 "296-4655-5-ND" H 6100 2000 60  0001 L CNN "Digi-Key_PN"
+F 5 "SN74AHCT125N" H 6100 2100 60  0001 L CNN "MPN"
+F 6 "Integrated Circuits (ICs)" H 6100 2200 60  0001 L CNN "Category"
+F 7 "Logic - Buffers, Drivers, Receivers, Transceivers" H 6100 2300 60  0001 L CNN "Family"
+F 8 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74ahct125" H 6100 2400 60  0001 L CNN "DK_Datasheet_Link"
+F 9 "/product-detail/en/texas-instruments/SN74AHCT125N/296-4655-5-ND/375798" H 6100 2500 60  0001 L CNN "DK_Detail_Page"
+F 10 "IC BUF NON-INVERT 5.5V 14DIP" H 6100 2600 60  0001 L CNN "Description"
+F 11 "Texas Instruments" H 6100 2700 60  0001 L CNN "Manufacturer"
+F 12 "Active" H 6100 2800 60  0001 L CNN "Status"
+	1    5900 1600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	1450 2300 850  2300
+Wire Wire Line
+	1450 2400 850  2400
+Text Label 950  2300 0    50   ~ 0
+ROT_DATA
+Text Label 950  2400 0    50   ~ 0
+ROT_CLK
+Text GLabel 3250 1600 2    50   Output ~ 0
+GPIO28
+Wire Wire Line
+	3250 1600 2850 1600
+Wire Wire Line
+	2850 2700 2900 2700
+Wire Wire Line
+	2850 2200 2900 2200
+$Comp
+L power:+5V #PWR0135
+U 1 1 61A2CCF0
+P 3100 800
+F 0 "#PWR0135" H 3100 650 50  0001 C CNN
+F 1 "+5V" H 3115 973 50  0000 C CNN
+F 2 "" H 3100 800 50  0001 C CNN
+F 3 "" H 3100 800 50  0001 C CNN
+	1    3100 800 
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1000 3100 1000
+Wire Wire Line
+	3100 1000 3100 800 
+$Comp
+L MCU_RaspberryPi_and_Boards:Pico U1
+U 1 1 619AAD68
+P 2150 1950
+F 0 "U1" H 2150 3165 50  0000 C CNN
+F 1 "Pico" H 2150 3074 50  0000 C CNN
+F 2 "macropad:RPi_Pico_SMD_TH" V 2150 1950 50  0001 C CNN
+F 3 "" H 2150 1950 50  0001 C CNN
+	1    2150 1950
+	1    0    0    -1  
+$EndComp
+$Comp
+L power:GND #PWR0130
+U 1 1 61A38A9C
+P 3100 1200
+F 0 "#PWR0130" H 3100 950 50  0001 C CNN
+F 1 "GND" H 3105 1027 50  0000 C CNN
+F 2 "" H 3100 1200 50  0001 C CNN
+F 3 "" H 3100 1200 50  0001 C CNN
+	1    3100 1200
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	2850 1200 3100 1200
+$Comp
+L power:GND #PWR0132
+U 1 1 61A3DEA8
+P 2900 2700
+F 0 "#PWR0132" H 2900 2450 50  0001 C CNN
+F 1 "GND" V 2905 2572 50  0000 R CNN
+F 2 "" H 2900 2700 50  0001 C CNN
+F 3 "" H 2900 2700 50  0001 C CNN
+	1    2900 2700
+	0    -1   -1   0   
+$EndComp
+Connection ~ 5300 2600
+Wire Wire Line
+	5300 2900 5300 3150
+$EndSCHEMATC
