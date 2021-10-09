@@ -106,15 +106,9 @@ Connection ~ 1650 5850
 Wire Wire Line
 	1650 5850 1650 5450
 Wire Wire Line
-	2550 5350 2950 5350
-Wire Wire Line
-	2950 5050 2950 4850
+	2950 4950 2950 4850
 Wire Wire Line
 	2950 4850 3000 4850
-Wire Wire Line
-	1350 5000 1350 4850
-Wire Wire Line
-	1350 4850 1600 4850
 Connection ~ 2950 4850
 Wire Wire Line
 	1600 4950 1600 4850
@@ -134,9 +128,7 @@ Wire Wire Line
 Wire Wire Line
 	1600 5350 1950 5350
 Wire Wire Line
-	1950 5550 1350 5550
-Wire Wire Line
-	1350 5550 1350 5300
+	1300 5550 1300 5250
 Text GLabel 1100 5350 0    50   Output ~ 0
 GPIO17
 Text GLabel 1100 5550 0    50   Output ~ 0
@@ -146,12 +138,7 @@ GPIO9
 Wire Wire Line
 	1600 5350 1100 5350
 Connection ~ 1600 5350
-Wire Wire Line
-	1350 5550 1100 5550
-Connection ~ 1350 5550
-Wire Wire Line
-	2950 5350 3350 5350
-Connection ~ 2950 5350
+Connection ~ 1300 5550
 Text GLabel 1200 1550 0    50   Input ~ 0
 GPIO1
 Text GLabel 1200 1750 0    50   Input ~ 0
@@ -269,12 +256,12 @@ $EndComp
 $Comp
 L Device:R R2
 U 1 1 6162DA9A
-P 1350 5150
-F 0 "R2" H 1420 5196 50  0000 L CNN
-F 1 "10k" H 1420 5105 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1280 5150 50  0001 C CNN
-F 3 "~" H 1350 5150 50  0001 C CNN
-	1    1350 5150
+P 1300 5100
+F 0 "R2" H 1370 5146 50  0000 L CNN
+F 1 "10k" H 1370 5055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1230 5100 50  0001 C CNN
+F 3 "~" H 1300 5100 50  0001 C CNN
+	1    1300 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -291,12 +278,12 @@ $EndComp
 $Comp
 L Device:R R1
 U 1 1 6162CB4D
-P 2950 5200
-F 0 "R1" H 3020 5246 50  0000 L CNN
-F 1 "10k" H 3020 5155 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2880 5200 50  0001 C CNN
-F 3 "~" H 2950 5200 50  0001 C CNN
-	1    2950 5200
+P 2950 5100
+F 0 "R1" H 3020 5146 50  0000 L CNN
+F 1 "10k" H 3020 5055 50  0000 L CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2880 5100 50  0001 C CNN
+F 3 "~" H 2950 5100 50  0001 C CNN
+	1    2950 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -651,8 +638,6 @@ F 3 "" H 5750 1350 50  0001 C CNN
 	1    5750 1350
 	1    0    0    -1  
 $EndComp
-Text GLabel 6050 3050 2    50   Output ~ 0
-NEOPIX_5v
 Wire Wire Line
 	5150 3050 5350 3050
 Wire Wire Line
@@ -760,8 +745,8 @@ $Comp
 L dk_Logic-Buffers-Drivers-Receivers-Transceivers:SN74AHCT125N U2
 U 1 1 61931135
 P 5750 2050
-F 0 "U2" H 5700 2953 60  0000 C CNN
-F 1 "SN74AHCT125N" H 5700 2847 60  0000 C CNN
+F 0 "U2" H 5550 2900 60  0000 C CNN
+F 1 "SN74AHCT125N" H 5250 2800 60  0000 C CNN
 F 2 "digikey-footprints:DIP-14_W3mm" H 5950 2250 60  0001 L CNN
 F 3 "http://www.ti.com/general/docs/suppproductinfo.tsp?distId=10&gotoUrl=http%3A%2F%2Fwww.ti.com%2Flit%2Fgpn%2Fsn74ahct125" H 5950 2350 60  0001 L CNN
 F 4 "296-4655-5-ND" H 5950 2450 60  0001 L CNN "Digi-Key_PN"
@@ -915,8 +900,6 @@ Text Notes 5850 4050 2    50   ~ 0
 Neopixel logic shifter
 Text Notes 10400 4300 2    50   ~ 0
 Neopixels
-Wire Notes Line
-	6700 3350 6700 1550
 Text Notes 2850 4050 2    50   ~ 0
 Raspberry PI
 Text Notes 7400 7500 0    50   ~ 0
@@ -932,4 +915,21 @@ F 3 "" H 2500 3550 50  0001 C CNN
 	1    2500 3550
 	-1   0    0    -1  
 $EndComp
+Wire Wire Line
+	2550 5350 2950 5350
+Wire Wire Line
+	2950 5250 2950 5350
+Connection ~ 2950 5350
+Wire Wire Line
+	2950 5350 3350 5350
+Wire Wire Line
+	1300 5550 1100 5550
+Wire Wire Line
+	1300 5550 1950 5550
+Wire Wire Line
+	1300 4950 1300 4850
+Wire Wire Line
+	1300 4850 1600 4850
+Text GLabel 6050 3050 2    50   Output ~ 0
+NEOPIX_5v
 $EndSCHEMATC
