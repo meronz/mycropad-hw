@@ -1,0 +1,9 @@
+EESchema-DOCLIB  Version 2.0
+#
+$CMP SK6812MINI-E
+D RGB LED with integrated controller
+K RGB LED NeoPixel Mini addressable
+F https://cdn-shop.adafruit.com/product-files/4960/4960_SK6812MINI-E_REV02_EN.pdf
+$ENDCMP
+#
+#End Doc Library
