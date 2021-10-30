@@ -113,11 +113,11 @@ Text Label 1950 5350 2    50   ~ 0
 DATA
 Text Label 2700 5350 2    50   ~ 0
 SW
-Text GLabel 1100 5350 0    50   Output ~ 0
-GPIO17
-Text GLabel 1100 5550 0    50   Output ~ 0
-GPIO18
-Text GLabel 3350 5350 2    50   Input ~ 0
+Text GLabel 1100 5350 0    50   Input ~ 0
+GPIO10
+Text GLabel 2850 5350 2    50   Input ~ 0
+GPIO11
+Text GLabel 1100 5550 0    50   Input ~ 0
 GPIO9
 Text GLabel 1200 1550 0    50   Input ~ 0
 GPIO1
@@ -167,16 +167,16 @@ Text Label 1300 2350 0    50   ~ 0
 SW7
 Text Label 1300 2450 0    50   ~ 0
 SW8
-Text Label 1300 2550 0    50   ~ 0
+Text Label 1300 2850 0    50   ~ 0
 ROT_SW
 Wire Wire Line
 	1800 2550 1200 2550
 Text GLabel 1200 2550 0    50   Input ~ 0
 GPIO9
 Text GLabel 1200 2850 0    50   Input ~ 0
-GPIO18
+GPIO11
 Text GLabel 1200 2750 0    50   Input ~ 0
-GPIO17
+GPIO10
 Wire Notes Line
 	3800 6250 3800 4450
 Text Notes 2350 6300 2    50   ~ 0
@@ -688,7 +688,7 @@ Wire Wire Line
 	1800 2850 1200 2850
 Text Label 1300 2750 0    50   ~ 0
 ROT_DATA
-Text Label 1300 2850 0    50   ~ 0
+Text Label 1300 2550 0    50   ~ 0
 ROT_CLK
 Text GLabel 3600 2050 2    50   Output ~ 0
 GPIO28
@@ -719,7 +719,7 @@ U 1 1 619AAD68
 P 2500 2400
 F 0 "U1" H 2500 3615 50  0000 C CNN
 F 1 "Pico" H 2500 3524 50  0000 C CNN
-F 2 "macropad:RPi_Pico_SMD_TH" V 2500 2400 50  0001 C CNN
+F 2 "mycropad:RPi_Pico_SMD_TH" V 2500 2400 50  0001 C CNN
 F 3 "" H 2500 2400 50  0001 C CNN
 	1    2500 2400
 	1    0    0    -1  
@@ -852,8 +852,6 @@ $EndComp
 Text GLabel 6050 3050 2    50   Output ~ 0
 NEOPIX_5v
 Wire Wire Line
-	2550 5350 3350 5350
-Wire Wire Line
 	1100 5550 1950 5550
 Wire Wire Line
 	1100 5350 1950 5350
@@ -870,4 +868,6 @@ F 3 "~" H 7450 1500 50  0001 C CNN
 	1    7450 1500
 	0    1    1    0   
 $EndComp
+Wire Wire Line
+	2550 5350 2850 5350
 $EndSCHEMATC
