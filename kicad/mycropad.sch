@@ -105,16 +105,6 @@ Wire Wire Line
 Connection ~ 1650 5850
 Wire Wire Line
 	1650 5850 1650 5450
-Wire Wire Line
-	2950 4950 2950 4850
-Wire Wire Line
-	2950 4850 3000 4850
-Connection ~ 2950 4850
-Wire Wire Line
-	1600 4950 1600 4850
-Connection ~ 1600 4850
-Wire Wire Line
-	1600 4850 2950 4850
 Text Label 1950 5550 2    50   ~ 0
 CLK
 Text Label 1950 5450 2    50   ~ 0
@@ -123,22 +113,12 @@ Text Label 1950 5350 2    50   ~ 0
 DATA
 Text Label 2700 5350 2    50   ~ 0
 SW
-Wire Wire Line
-	1600 5250 1600 5350
-Wire Wire Line
-	1600 5350 1950 5350
-Wire Wire Line
-	1300 5550 1300 5250
 Text GLabel 1100 5350 0    50   Output ~ 0
 GPIO17
 Text GLabel 1100 5550 0    50   Output ~ 0
 GPIO18
 Text GLabel 3350 5350 2    50   Input ~ 0
 GPIO9
-Wire Wire Line
-	1600 5350 1100 5350
-Connection ~ 1600 5350
-Connection ~ 1300 5550
 Text GLabel 1200 1550 0    50   Input ~ 0
 GPIO1
 Text GLabel 1200 1750 0    50   Input ~ 0
@@ -203,17 +183,6 @@ Text Notes 2350 6300 2    50   ~ 0
 Rotary encoder
 Text Notes 5600 6300 2    50   ~ 0
 Switches
-$Comp
-L power:+5V #PWR0104
-U 1 1 6173F12D
-P 3000 4850
-F 0 "#PWR0104" H 3000 4700 50  0001 C CNN
-F 1 "+5V" H 3015 5023 50  0000 C CNN
-F 2 "" H 3000 4850 50  0001 C CNN
-F 3 "" H 3000 4850 50  0001 C CNN
-	1    3000 4850
-	1    0    0    -1  
-$EndComp
 Wire Notes Line
 	4250 3350 4250 1550
 $Comp
@@ -238,52 +207,17 @@ F 3 "" H 8000 1100 50  0001 C CNN
 	1    8000 1100
 	1    0    0    -1  
 $EndComp
-Text GLabel 7350 1500 0    50   Input ~ 0
+Text GLabel 7300 1500 0    50   Input ~ 0
 NEOPIX_5v
-Wire Wire Line
-	7350 1500 7600 1500
 $Comp
-L Device:R R4
+L Device:R R2
 U 1 1 6173190B
 P 5150 3200
-F 0 "R4" H 5220 3246 50  0000 L CNN
+F 0 "R2" H 5220 3246 50  0000 L CNN
 F 1 "10k" H 5220 3155 50  0000 L CNN
 F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 5080 3200 50  0001 C CNN
 F 3 "~" H 5150 3200 50  0001 C CNN
 	1    5150 3200
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R2
-U 1 1 6162DA9A
-P 1300 5100
-F 0 "R2" H 1370 5146 50  0000 L CNN
-F 1 "10k" H 1370 5055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1230 5100 50  0001 C CNN
-F 3 "~" H 1300 5100 50  0001 C CNN
-	1    1300 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R3
-U 1 1 6162E01A
-P 1600 5100
-F 0 "R3" H 1670 5146 50  0000 L CNN
-F 1 "10k" H 1670 5055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 1530 5100 50  0001 C CNN
-F 3 "~" H 1600 5100 50  0001 C CNN
-	1    1600 5100
-	1    0    0    -1  
-$EndComp
-$Comp
-L Device:R R1
-U 1 1 6162CB4D
-P 2950 5100
-F 0 "R1" H 3020 5146 50  0000 L CNN
-F 1 "10k" H 3020 5055 50  0000 L CNN
-F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 2880 5100 50  0001 C CNN
-F 3 "~" H 2950 5100 50  0001 C CNN
-	1    2950 5100
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -685,19 +619,6 @@ Wire Wire Line
 Text Label 4750 3000 0    50   ~ 0
 NEOPIX
 $Comp
-L power:GND #PWR0129
-U 1 1 619569BC
-P 5150 1650
-F 0 "#PWR0129" H 5150 1400 50  0001 C CNN
-F 1 "GND" V 5155 1522 50  0000 R CNN
-F 2 "" H 5150 1650 50  0001 C CNN
-F 3 "" H 5150 1650 50  0001 C CNN
-	1    5150 1650
-	0    1    1    0   
-$EndComp
-Wire Wire Line
-	5150 1650 5350 1650
-$Comp
 L Switch:SW_Push SW5
 U 1 1 61605E91
 P 6100 4800
@@ -916,20 +837,37 @@ F 3 "" H 2500 3550 50  0001 C CNN
 	-1   0    0    -1  
 $EndComp
 Wire Wire Line
-	2550 5350 2950 5350
-Wire Wire Line
-	2950 5250 2950 5350
-Connection ~ 2950 5350
-Wire Wire Line
-	2950 5350 3350 5350
-Wire Wire Line
-	1300 5550 1100 5550
-Wire Wire Line
-	1300 5550 1950 5550
-Wire Wire Line
-	1300 4950 1300 4850
-Wire Wire Line
-	1300 4850 1600 4850
+	5150 2850 5350 2850
+$Comp
+L power:GND #PWR0129
+U 1 1 619569BC
+P 5150 2850
+F 0 "#PWR0129" H 5150 2600 50  0001 C CNN
+F 1 "GND" V 5155 2722 50  0000 R CNN
+F 2 "" H 5150 2850 50  0001 C CNN
+F 3 "" H 5150 2850 50  0001 C CNN
+	1    5150 2850
+	0    1    1    0   
+$EndComp
 Text GLabel 6050 3050 2    50   Output ~ 0
 NEOPIX_5v
+Wire Wire Line
+	2550 5350 3350 5350
+Wire Wire Line
+	1100 5550 1950 5550
+Wire Wire Line
+	1100 5350 1950 5350
+Text Notes 700  3800 0    50   ~ 0
+All GPIOs except NEOPIX must be \nconfigured as internal pullup.
+$Comp
+L Device:R R1
+U 1 1 617F32B4
+P 7450 1500
+F 0 "R1" V 7243 1500 50  0000 C CNN
+F 1 "200R" V 7334 1500 50  0000 C CNN
+F 2 "Resistor_THT:R_Axial_DIN0204_L3.6mm_D1.6mm_P5.08mm_Horizontal" V 7380 1500 50  0001 C CNN
+F 3 "~" H 7450 1500 50  0001 C CNN
+	1    7450 1500
+	0    1    1    0   
+$EndComp
 $EndSCHEMATC
