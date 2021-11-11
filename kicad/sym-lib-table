@@ -1,0 +1,3 @@
+(sym_lib_table
+  (lib (name Mycropad)(type Legacy)(uri /home/sal/repos/meronz/mycropad-hw/kicad/Mycropad.lib)(options "")(descr ""))
+)
